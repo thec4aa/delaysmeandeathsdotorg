@@ -3894,6 +3894,7 @@ var Popover = function ($) {
 
 
 function getDayCount(){
+    // calculate days since the task force started
     dateTaskForce = new Date('15 Sept 2016 GMT-0800') // PST is GMT-0800
     dateToday = new Date(); // get the time -- based on the users computer, not the server!
     diffSeconds = Math.abs(dateToday - dateTaskForce)/1000; // calculate diff in seconds (Date objects use milliseconds)
@@ -3902,10 +3903,26 @@ function getDayCount(){
     return numberDays; // return
 }
 
+function getDaysThisYear(){
+    // last updated 2019
+    dateJan1 = new Date('1 Jan 2019 GMT-0800') // PST is GMT-0800
+    dateToday = new Date();
+    diffSeconds = Math.abs(dateToday - dateJan1)/1000; // calculate diff in seconds (Date objects use milliseconds)
+    numberDays = diffSeconds/86400;  // 86400 seconds in one day
+    numberDays = Math.floor(numberDays); // convert to integer
+    return numberDays; // return
+}
+
 
 function getDeathCount(){
-    days = getDayCount(); 
-    deathToll = days*0.9095890411; 
+    // There's some conservative estimating here. It's explained at /data-sources
+    // Data from https://www.kingcounty.gov/depts/health/examiner/overdose.aspx
+    // Deaths in 2016 = 97
+    // Deaths in 2017 = 382
+    // Deaths in 2018 = 415
+    // Deaths in 2019 is calculated based on 2018 death rate of 1.1369863014/day
+    daysThisYear = getDaysThisYear(); 
+    deathToll = (97+382+415)+(daysThisYear*1.1369863014); 
     deathToll = Math.floor(deathToll); // convert to integer
     return deathToll;
 }
