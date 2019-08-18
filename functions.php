@@ -1,4 +1,8 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 function understrap_remove_scripts() {
     wp_dequeue_style( 'understrap-styles' );
     wp_deregister_style( 'understrap-styles' );
@@ -140,6 +144,8 @@ function getDeathCount(){
     function all_excerpts_get_more_link( $post_excerpt ) {
         return $post_excerpt . ' [...]<p><a class="btn btn-lg btn-secondary understrap-read-more-link" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More...',
         'core-understrap' ) . '</a></p>';
+    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+        wp_enqueue_script( 'comment-reply' );
     }
 
 
@@ -160,3 +166,7 @@ function childtheme_formats(){
 // SET OEMBED WIDTH:
 if ( ! isset( $content_width ) ) $content_width = 940;
 
+function add_child_theme_textdomain() {
+    load_child_theme_textdomain( 'understrap-child', get_stylesheet_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
