@@ -26,13 +26,13 @@ if ( is_front_page() && is_home() ) {
                 <main class="site-main" id="main">
 
                     <h1 id="home-rec-date" class="fade-in">
-                        The King County Heroin Task Force recommendation for <a href="//yestoscs.org" target="_blank" >Safe Consumption Spaces</a> was published on September 15, 2016.
+                        Mayor Durkan, the King County Heroin Task Force recommendation for <a href="//yestoscs.org" target="_blank" >Safe Consumption Spaces</a> was published on September 15, 2016.
                         <br/>
                         <br />
                     </h1>
                     
                     <h1 id="home-today-date" class="fade-in">
-                        Today is <span class="number-block"><?php echo date('F j, Y');?></span>.
+                        Today is <span class="number-block"><?php echo date_i18n('F j, Y');?></span>.
                         <br />
                         <br />
                     </h1>

@@ -21,6 +21,13 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
 
+    <!-- Added 2018-09-15 - simpler -->
+	<meta name="twitter:card" value="summary" />
+	<meta name="twitter:url" value="http://delaysmeandeaths.org" />
+	<meta name="twitter:title" value="DELAYS MEAN DEATHS" />
+	<meta name="twitter:description" value="Learn how many have died while we wait for King County to follow through." />
+	<meta name="twitter:image" value="https://delaysmeandeaths.org/wp-content/uploads/2018/09/dealysmeandeaths512.png" />
+	<meta name="twitter:site" value="@yestoscs" />
 
 </head>
 
