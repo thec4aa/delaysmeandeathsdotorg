@@ -49,7 +49,9 @@ $the_theme = wp_get_theme();
 
 						<div class="site-info  wrapper-variable-md">
 
-						Safe Consumption Spaces Save Lives: <a href="//yestoscs.org">yestoscs.org</a>
+						<!-- Safe Consumption Spaces Save Lives: <a href="//yestoscs.org">yestoscs.org</a> -->
+						Send a <a href="https://ctt.ac/XvdSz
+" target="_blank">Tweet to Mayor Durkan</a>
 
 						
 						</br>
