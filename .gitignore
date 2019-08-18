@@ -28,3 +28,5 @@ Thumbs.db
 .idea/
 
 npm-debug.log
+
+yarn.lock
