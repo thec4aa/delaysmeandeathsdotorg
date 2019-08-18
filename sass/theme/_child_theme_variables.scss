@@ -1,0 +1,93 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+@import url('https://fonts.googleapis.com/css?family=Vesper+Libre');
+
+///////////////////////////////////////////////////////////////////////////////
+//Basic Setup Beginn
+///////////////////////////////////////////////////////////////////////////////
+
+// Fonts and Typo
+$font-family-sans-serif:  "barlow-medium",Helvetica,Arial,sans-serif; 
+$secondary-font-family:     $font-family-sans-serif;
+$extra-font-family: "Vesper Libre", "Times New Roman", serif;
+$text-color:                #FFFFFF;
+$enable-flex:               true;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 544px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1440px
+) !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1380px
+) !default;
+//Padding between columns. Gets divided in half for the left and right. Also used for wrapper vertical paddings
+$grid-gutter-width-base:    60px;
+$body-bg:                   transparent;
+
+//Color setup for wrappers
+$default-color:     #fff;
+$default-text:      $text-color;
+
+$contrast-color:    #777; // #212935;
+$contrast-text:     hsla(0, 0%, 100%, .55);
+
+$accent-color:      #555; // #FB4747;
+$accent-text:       #555;
+
+$light-color:       #fff; // #ccc;
+$light-text:        $text-color;
+
+$lighter-color:     #eee; // #F0F2F5;
+$lighter-text:      $text-color;
+
+$lightest-color:    #fff; // #f9f9f9;
+$lightest-text:     $text-color;
+
+$dark-color:        #fff; //#404040;
+$dark-text:         lighten($text-color, 50%);
+
+$darker-color:      #333; // #202123;
+$darker-text:       lighten($text-color, 60%);
+
+$darkest-color:     #222;
+$darkest-text:      #222;
+
+// Bootstrap color overwrites
+$brand-primary:         #FFF; 
+$brand-success:         #FFF;
+
+// Navbar
+$navbar-light-color:                 $lightest-color;
+
+// Global border radius
+$border-radius:          0rem !default;
+$border-radius-lg:       0rem !default;
+$border-radius-sm:       0rem !default;
+
+//Buttons
+$btn-padding-x-lg:               2.25rem !default;
+$btn-padding-y-lg:               1rem !default;
+
+// Small text stuff
+$small_text:   .80rem;
