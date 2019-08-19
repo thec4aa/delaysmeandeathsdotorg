@@ -1,5 +1,7 @@
 # delaysmeandeathsdotorg
 
+![Delays Mean Deaths Screenshot](https://raw.githubusercontent.com/thec4aa/delaysmeandeathsdotorg/master/screenshot.png "Delays Mean Deaths Screenshot")
+
 Code for the DelaysMeanDeaths.org Understrap WordPress theme.
 
 Based on Basic Child Theme for UnderStrap Theme Framework: https://github.com/holger1411/understrap
