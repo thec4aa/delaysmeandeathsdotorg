@@ -8,7 +8,7 @@ Based on Basic Child Theme for UnderStrap Theme Framework: https://github.com/ho
 
 ## Install Notes:
 
-- we remove all widgets
+- We remove all widgets
 - Plugins include:
     + Ambrosite Next/Previous Post Link Plus https://wordpress.org/plugins/ambrosite-nextprevious-post-link-plus/
     + Aksimet Anti-Spam https://wordpress.org/plugins/akismet/
@@ -16,3 +16,4 @@ Based on Basic Child Theme for UnderStrap Theme Framework: https://github.com/ho
     + USP-Pro https://plugin-planet.com/usp-pro/
     + Yoast SEO https://wordpress.org/plugins/wordpress-seo/
     + Handmade Update Plugin for themes and plugins
+- We use [ClicktoTweet.com](https://clicktotweet.com/) for the Tweets to Mayor Durkan
